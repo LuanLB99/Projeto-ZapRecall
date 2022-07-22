@@ -28,7 +28,7 @@ export default function OpenAswer({answer, number, setChoices, choices}) {
         setOpen(true)
         setOption("correct");
         setIcon("checkmark-circle-outline");
-        const finish = [...choices, "almost"]
+        const finish = [...choices, "correct"]
         setChoices(finish)
     }
 
@@ -37,9 +37,9 @@ export default function OpenAswer({answer, number, setChoices, choices}) {
 { (open === false ) ? <div className="openAnswer">
             <h3>{answer}</h3>
             <div>
-            <div className="optionAnswer" onClick={incorrectOption}><h3>Não lembrei</h3></div>
+            <div className="optionAnswerIncorrect" onClick={incorrectOption}><h3>Não lembrei</h3></div>
             <div className="optionAnswer" onClick={doubtOption}><h3>Quase não lembrei</h3></div>
-            <div className="optionAnswer" onClick={correctOption}><h3>Zap!</h3></div>
+            <div className="optionAnswerCorrect" onClick={correctOption}><h3>Zap!</h3></div>
             </div>
         </div> : <div className={option}>
             <h3>Pergunta {number+1}</h3>

@@ -7,9 +7,9 @@ export default function OpenQuestion({question, answer, number, setChoices, choi
 
     return(
         
-        (status === 'open') ? <div className="openQuestion" onClick={() => setStatus('closed')}>
+        (status === 'open') ? <div className="openQuestion" >
         <h3>{question}</h3>
-        <ion-icon name="sync-outline"></ion-icon>
+        <img src="./assets/img/setinha.png"  onClick={() => setStatus('closed')}></img>
         </div>
 
          : <OpenAswer answer={answer} number={number} setChoices={setChoices} choices={choices} /> )
