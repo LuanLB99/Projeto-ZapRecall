@@ -12,7 +12,7 @@ body {
     align-items: center;
 }
 
-.root {
+.content {
     height: 650px;
     width: 350px;
     margin: 0 auto;
@@ -56,13 +56,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .topo img {
     margin-right: 20px;
+    margin-top: 50px;
     height: 70px;
+}
+
+.topo div {
+    margin-top: 50px;
 }
 
 
@@ -75,6 +79,52 @@ body {
     background: white;
     font-family: Recursive;
     color: black;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 5px 0px #00000026;
+}
+
+.correct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    background: white;
+    font-family: Recursive;
+    color: green;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 5px 0px #00000026;
+}
+
+.incorrect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    background: white;
+    font-family: Recursive;
+    text-decoration: dashed;
+    color: red;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 5px 0px #00000026;
+}
+
+.almost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    background: white;
+    font-family: Recursive;
+    color: yellow;
     margin: 20px auto;
     padding: 10px;
     border-radius: 2px;

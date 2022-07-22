@@ -1,7 +1,11 @@
-export default function Finish() {
+import React from "react";
+
+
+export default function Finish({choices}) {
+
     return(
         <div className="finish">
-            <h4>0/4 CONCLUÍDOS</h4>
+            <h4>{choices.length}/4 CONCLUÍDOS</h4>
         </div>
     )
 }

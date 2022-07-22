@@ -1,8 +1,9 @@
 import Questions from "./Questions";
-import Finish from "./Finish"
+
 export default function Home(){
     return(
         <>
+        <div className="content">
         <div className="home">
         <img src="./assets/img/logo.png"></img>
         <div className="zaprecall">ZapRecall</div>
@@ -10,7 +11,7 @@ export default function Home(){
         </div>
         <div className="questions">
         <Questions />
-        <Finish />
+        </div>
         </div>
         </>
     )
