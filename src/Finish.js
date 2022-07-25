@@ -1,4 +1,6 @@
 import React from "react";
+import sad from "./assets/img/sad.png"
+import party from "./assets/img/party.png"
 
 
 export default function Finish({choices}) {
@@ -8,7 +10,7 @@ export default function Finish({choices}) {
         <div className="finish">
             {(choices.length===4 && choices.includes("incorrect")) && <>
             <div className="result">
-                <img src="./assets/img/sad.png"></img>
+                <img src={sad}></img>
                 <h4>Putz...</h4>
             </div>
             <div>Ainda faltam alguns... Mas não desanime</div> </>}
@@ -16,10 +18,10 @@ export default function Finish({choices}) {
             {(choices.length===4 && !choices.includes("incorrect")) &&
             <>
             <div className="result">
-                <img src="./assets/img/party.png"></img>
+                <img src={party}></img>
                 <h4>Parabéns!</h4>
             </div>
-            <div>Ainda faltam alguns... Mas não desanime</div> 
+            <div>Você não esqueceu de nenhum flashcard!</div> 
             </>  
         }
             <h4>{choices.length}/4 CONCLUÍDOS</h4>

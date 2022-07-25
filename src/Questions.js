@@ -1,6 +1,11 @@
 import React from "react";
 import Question from "./Question"
 import Finish from "./Finish"
+import logotipo from "./assets/img/logo.png";
+
+function misturar(){
+    return 0.5 - Math.random
+}
 
 export default function Questions() {
 
@@ -23,10 +28,13 @@ const zaps = [{question: "O que é JSX?",
 },
 ]
 
+zaps.sort(misturar);
+
+
     return(
         <>
         <div className="topo">
-        <img src="./assets/img/logo.png"></img>
+        <img src={logotipo}></img>
         <div className="zaprecall">ZapRecall</div>
         </div>
 

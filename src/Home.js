@@ -1,3 +1,6 @@
+import "./assets/Css/reset.css";
+import "./assets/Css/style.css";
+import logo from "./assets/img/logo.png"
 import Questions from "./Questions";
 import React from "react";
 
@@ -8,7 +11,7 @@ export default function Home(){
         (tela === "tela1") ?
         <div className="content">
         <div className="home">
-        <img src="./assets/img/logo.png"></img>
+        <img src={logo}></img>
         <div className="zaprecall">ZapRecall</div>
         <button onClick={() => setTela("tela2")}>Iniciar Recall!</button>
         </div>
